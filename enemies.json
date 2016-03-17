@@ -1,0 +1,71 @@
+{
+	"Enemies":
+	[{
+		"Title":"Archer",
+		"Photo":"images/characters/enemies/archer.jpg",
+		"SVG":[
+			"images/characters/heroes/weapon.svg",
+			"images/characters/heroes/strength.svg",
+			"images/characters/heroes/speed.svg"
+			],
+		"PNG":[
+			"images/characters/heroes/weapon.png",
+			"images/characters/heroes/strength.png",
+			"images/characters/heroes/speed.png"
+		],
+		"Weapon":"Bow",
+		"Strength":"3 / 5",
+		"Speed":"4 / 5"
+	},
+	{
+		"Title":"Footman",
+		"Photo":"images/characters/enemies/footman.jpg",
+		"SVG":[
+			"images/characters/heroes/weapon.svg",
+			"images/characters/heroes/strength.svg",
+			"images/characters/heroes/speed.svg"
+			],
+		"PNG":[
+			"images/characters/heroes/weapon.png",
+			"images/characters/heroes/strength.png",
+			"images/characters/heroes/speed.png"
+		],
+		"Weapon":"Sword",
+		"Strength":"4 / 5",
+		"Speed":"3 / 5"
+	},
+	{
+		"Title":"Sorcerer",
+		"Photo":"images/characters/enemies/sorcerer.jpg",
+		"SVG":[
+			"images/characters/heroes/weapon.svg",
+			"images/characters/heroes/strength.svg",
+			"images/characters/heroes/speed.svg"
+			],
+		"PNG":[
+			"images/characters/heroes/weapon.png",
+			"images/characters/heroes/strength.png",
+			"images/characters/heroes/speed.png"
+		],
+		"Weapon":"Staff",
+		"Strength":"3 / 5",
+		"Speed":"3 / 5"
+	},
+	{
+		"Title":"Warlord",
+		"Photo":"images/characters/enemies/warlord.jpg",
+		"SVG":[
+			"images/characters/heroes/weapon.svg",
+			"images/characters/heroes/strength.svg",
+			"images/characters/heroes/speed.svg"
+			],
+		"PNG":[
+			"images/characters/heroes/weapon.png",
+			"images/characters/heroes/strength.png",
+			"images/characters/heroes/speed.png"
+		],
+		"Weapon":"Sword",
+		"Strength":"5 / 5",
+		"Speed":"5 / 5"
+	}]
+}

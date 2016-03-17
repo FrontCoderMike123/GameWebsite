@@ -1,0 +1,45 @@
+{
+	"Team":
+	[{
+		"Name":"Jonathan Ferreira",
+		"Photo":"images/team/jon.jpg",
+		"Tasks":
+		[
+			"Create Level 1",
+			"Moving Platforms / Obstacles",
+			"Enemies Functionality",
+			"Save / Load Checkpoints",
+			"Scoring / Points / Timer",
+			"Testing & Functionality",
+			"Level & Character Selection"
+		]
+	},
+	{
+		"Name":"Randy Phalla",
+		"Photo":"images/team/randy.jpg",
+		"Tasks":
+		[
+			"Create Level 2",
+			"GUI (Graphic User Interface)",
+			"Instruction Screens",
+			"Pickups",
+			"Character Animations",
+			"Testing & Functionality",
+			"Designed Website"
+		]
+	},
+	{
+		"Name":"Michel Beaubien",
+		"Photo":"images/team/michel.jpg",
+		"Tasks":
+		[
+			"Create Level 3",
+			"Final Boss Fight",
+			"Health & Inventory",
+			"Sound Effects",
+			"Testing & Functionality",
+			"Lead Coder on Website",
+			"Character Animations"
+		]
+	}]
+}

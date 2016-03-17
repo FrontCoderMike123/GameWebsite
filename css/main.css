@@ -1,0 +1,3420 @@
+body
+{
+	position: relative;
+	height: 100vh!important;
+	overflow-x: hidden;
+	background:#111!important;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	font-family: 'Montserrat', sans-serif;
+}
+
+p,span,button,li
+{
+	font-family: 'Open Sans', sans-serif!important;
+}
+
+.none
+{
+	display: none;
+}
+
+.block
+{
+	display: block;
+}
+
+.break
+{
+	display: block;
+}
+
+#mainContainer
+{
+	position: relative;
+	min-height: 100vh;
+	max-width: 1400px!important;
+	display: block;
+	margin: auto;
+}
+
+ul
+{
+	margin: 0!important;
+}
+
+.appear
+{
+	display: block!important;
+}
+
+#hex
+{
+	background-image: url('../images/logo/logo.png');
+	background-size: contain;
+	background-position: top center;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: -300px;
+	width: 15%;
+	height:100%;
+	left: 42.5%;
+}
+
+.gameNavCon
+{
+	border-bottom: none!important;
+}
+
+object
+{
+	pointer-events: none;
+}
+
+.divider
+{
+	width: 100%;
+	height: 10px;
+	background-color: #fff;
+	box-shadow: 0 10px 5px -2px rgba(0,0,0,.5);
+	float: left;
+}
+
+.scrolls
+{
+	display: block;
+	margin: auto;
+	width: 30px;
+	text-align: center;
+}
+
+.nextIcon
+{
+	border: none!important;/*THESE IMPORTANTS ARE NEEDED*/
+	width: 100%!important;/*THESE IMPORTANTS ARE NEEDED*/
+	margin: 0!important;/*THESE IMPORTANTS ARE NEEDED*/
+	box-shadow: none!important;/*THESE IMPORTANTS ARE NEEDED*/
+}
+
+h5
+{
+	line-height: 20px!important;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: none!important;
+}
+
+img
+{
+	max-width: 100%!important;
+}
+
+header
+{
+	text-align: center;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	clear: both;
+}
+
+#banner
+{
+	margin: 0;
+	width: 100%;
+}
+
+#padding
+{
+	padding-bottom:60px;
+}
+
+footer
+{
+	background: #fff;
+	width:100%;
+	padding: .5%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 200;
+	clear: both;
+	display: block;
+	overflow: hidden;
+	color: #333;
+	box-shadow: 0 -8px 8px -5px rgba(51,51,51,.5);
+}
+
+footer p, footer h3
+{
+	margin: 0;
+}
+
+footer p
+{
+	text-align: right;
+	float: right;
+	font-size: 1.1em;
+}
+
+footer h3
+{
+	float: left;
+}
+
+#mainNav
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(51,51,51,.7);
+	padding: 10px 0;
+}
+
+#mainNav li
+{
+	display: inline-block;
+	margin: 0 40px;
+}
+
+#mainNav a
+{
+	color: white;
+	font-weight: bold;
+	padding-bottom: 2px;
+	border-bottom: 2px solid rgba(0,0,0,0);
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+#mainNav a:hover
+{
+	text-decoration: none;
+	border-color: #aa1111;
+}
+
+#mainNav.home .home,
+#mainNav.story .story,
+#mainNav.team .team,
+#mainNav.gameplay .gameplay
+{
+	border-bottom: 3px solid #aa1111;
+	font-size: 1.5em;
+}
+
+.active
+{
+	border-bottom: 5px solid #aa1111;
+	font-size: 1.3em;
+}
+
+.opening
+{
+	text-align: center;
+	color: white;
+	overflow: hidden;
+	position: relative;
+	background:#111;
+	padding: 2% 0;
+	border-bottom: 10px solid #fff;
+}
+
+.opening h5
+{
+	font-size: 1.5em;
+	display: block;
+}
+
+#teamH
+{
+	margin-bottom: 110px;
+}
+
+#taskButton
+{
+  position: absolute;
+	bottom: 15px;
+	left: 35%;
+	width: 30%;
+	font-size: 2em;
+	margin-top: 20px;
+	padding: 1% 0;
+	background-color: rgba(251,251,251,.5);
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	box-shadow: 0 5px 0 rgba(255,255,255,1);
+	border: none;
+	text-shadow: 0 0 3px rgba(0,0,0,1);
+}
+
+#taskButton:hover
+{
+	box-shadow: 0 3px 0;
+	bottom: 13px;
+	text-shadow: 0 0 6px rgba(0,0,0,1);
+}
+
+#taskButton:active
+{
+	box-shadow: 0 0px 0;
+	bottom: 10px;
+	text-shadow: none;
+}
+
+.opening h1
+{
+	margin: 0 0 20px 0;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.opening div
+{
+	display: inline-block;
+	margin: 20px 50px 0 50px;
+	background-color: rgba(55,55,55,.5);
+	border: 3px solid #333;
+	padding: 50px 100px;
+	font-weight: bold;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-opacity: .9;
+	-moz-opacity: .9;
+	-o-opacity: .9;
+	opacity: .9;
+}
+
+.opening ul
+{
+	margin: 0;
+}
+
+.opening ul li
+{
+	display: inline-block;
+	margin: 0px 20px;
+	background-color: rgba(55,55,55,.5);
+	border: 3px solid #333;
+	padding: 5px 20px;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-opacity: .9;
+	-moz-opacity: .9;
+	-o-opacity: .9;
+	opacity: .9;
+}
+
+#creation0 li
+{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.opening ul li:hover
+{
+	border-color: #444;
+	border-radius: 5px;
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	-o-opacity: 1;
+	opacity: 1;
+}
+
+.opening a
+{
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+.opening a:hover
+{
+	color: #ccc;
+}
+
+.opening p
+{
+	margin: 0;
+}
+
+.containers h5
+{
+	font-weight: bold;
+}
+
+.containers
+{
+	width: 100%;
+	padding: 2% 0;
+	color: white;
+	float: left;
+	background-image: url(../images/layouts/bg.png);
+	background-repeat: no-repeat;
+	background-position: top left;
+	background-size: cover;
+}
+
+.containers h1
+{
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.containers p
+{
+	line-height: 35px;
+	font-size: 1.2em;
+	margin: 0;
+}
+
+.containers img
+{
+	box-shadow: 0 10px 10px -5px rgba(0,0,0,.5);
+	border: 3px solid #333;
+}
+
+.whatTextBox
+{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.whatTextBox p
+{
+	width: 45%;
+	padding: 1%;
+	float: left;
+	margin-left: 5%;
+	background: rgba(51,51,51,.5);
+	font-size: 1.35em;
+}
+
+.whatTextBox img
+{
+	width: 45%;
+	margin-left: 2%;
+	float: left;
+}
+
+#storyCon p
+{
+	text-align: center;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 20px;
+	background: rgba(51,51,51,.5);
+	padding: 1%;
+	font-size: 1.35em;
+}
+
+#storyCon img
+{
+	margin: auto;
+	display: block;
+	margin-bottom: 20px;
+}
+
+#multiCon p
+{
+	width: 45%;
+	float: right;
+	margin-right: 5%;
+	background: rgba(51,51,51,.5);
+	padding: 1%;
+	margin-bottom: 10px;
+	font-size: 1.3em;
+}
+
+#multiCon img
+{
+	width: 45%;
+	margin-right: 2%;
+	float: right;
+	margin-bottom: 20px;
+}
+
+#learnMore
+{
+	border: none;
+	background: rgba(170,17,17,.5);
+	padding: 15px 0;
+	width: 20%;
+	border-radius: 5px;
+	margin:auto;
+	display: block;
+	clear: both;
+	font-size: 1.5em;
+	margin-top: 20px;
+	text-transform: uppercase;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	margin-bottom: 20px;
+}
+
+#learnMore:hover
+{
+	background:rgba(170,17,17,.8);
+	font-weight: bold;
+}
+
+/************************TEAMS PAGE*************************************/
+#teamCon
+{
+	text-align: center;
+	position: relative;
+	background-color: white;
+	background-image: none;
+	padding: 3% 0;
+}
+
+#phantom
+{
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 200px;
+	box-shadow: none;
+}
+
+.teamMates
+{
+	display: inline-block;
+	margin: 0 30px;
+	border-top-right-radius: 50%;
+	border-top-left-radius: 50%;
+	color: #333;
+}
+
+.teamMates img
+{
+	border-radius: 50%;
+	box-shadow: none;
+	-webkit-box-shadow: 0 0 10px rgba(51,51,51,.5);
+	-moz-box-shadow: 0 0 10px rgba(51,51,51,.5);
+	-o-box-shadow: 0 0 10px rgba(51,51,51,.5);
+	box-shadow: 0 0 10px rgba(51,51,51,.5);
+}
+
+.teamMates ul
+{
+	margin: 10px 0;
+}
+
+.teamMates ul li
+{
+	font-size: 1.2em;
+	padding: 8px 0;
+}
+
+.teamMates ul li:nth-child(odd)
+{
+	border-bottom: thin solid #555;
+}
+
+.teamMates ul li:nth-child(even)
+{
+	border-bottom: thin solid #999;
+}
+
+.teamNames
+{
+	font-weight: bold;
+}
+
+.tasks
+{
+	display: block;
+	clear: both;
+	padding: 10px 0;
+	margin-top: 10px;
+	background-color: rgba(51,51,51,.9);
+	font-size: 1.3em;
+	font-weight: bold;
+	line-height: 40px;
+	color: white;
+	border-radius: 5px;
+	-webkit-box-shadow: 0 10px 10px -5px rgba(51,51,51,.5);
+	-moz-box-shadow: 0 10px 10px -5px rgba(51,51,51,.5);
+	-o-box-shadow: 0 10px 10px -5px rgba(51,51,51,.5);
+	box-shadow: 0 10px 10px -5px rgba(51,51,51,.5);
+}
+
+.teamOpening h5
+{
+	padding: 0;
+}
+
+/************************STORY PAGE**************************************/
+#storyClicker
+{
+	text-align: center;
+}
+
+#storyClicker li
+{
+	background-color: #444;
+	display: inline-block;
+	margin: 0 15px;
+	border: 3px solid #333;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-opacity: .6;
+	-moz-opacity: .6;
+	-o-opacity: .6;
+	opacity: .6;
+	padding: 10px 20px;
+}
+
+#storyClicker ul li:hover
+{
+	-webkit-opacity: 1;
+	-moz-opacity: 1;
+	-o-opacity: 1;
+	opacity: 1;
+}
+
+#storyClicker a
+{
+	color: white;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+#storyClicker a:hover
+{
+	color: #ccc;
+}
+
+/******************************GAME CONTROLS*********************************/
+
+#controlCon img
+{
+	width: 900px;
+	display: block;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+
+/******************************GAME STORY CON AND DIVs**********************************/
+#gameStoryCon
+{
+  display: block;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	padding: 40px 0;
+}
+
+.no-scroll::-webkit-scrollbar {display:none!important; width:0px!important;}
+.no-scroll::-moz-scrollbar {display:none!important; width:0px!important;}
+.no-scroll::-o-scrollbar {display:none!important; width:0px!important;}
+.no-scroll::-google-ms-scrollbar {display:none!important; width:0px!important;}
+.no-scroll::-khtml-scrollbar {display:none!important; width:0px!important;}
+
+#gameStoryCon select
+{
+	width: 100%;
+	text-align: center;
+	background: none;
+	border: none;
+	color: white;
+	height:100px;
+}
+
+#gameStoryCon select option
+{
+	width: 20%;
+	display: inline-block;
+	padding: 20px 0;
+	margin: 0 40px;
+	background: rgba(255,255,255,.5);
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#gameStoryCon select option:checked
+{
+	box-shadow: 0 0 10px 100px #aa1111 inset;
+	border-radius: 10px;
+}
+
+.animate
+{
+  display: block;
+  width: 95%;
+	margin: auto;
+	clear: both;
+	background-color: rgba(55,55,55,.5);
+	border: 3px solid #333;
+	font-weight: bold;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	-o-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-opacity: .9;
+	-moz-opacity: .9;
+	-o-opacity: .9;
+	opacity: .9;
+	padding-top: 10px;
+}
+
+.animateCon h3
+{
+	font-weight: bold;
+	color: white;
+	font-size: 2.5em;
+	margin: 10px 0;
+	text-transform: uppercase;
+}
+
+.animateCon ul
+{
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 12px;
+}
+
+.animateCon ul li
+{
+	width: 42%;
+	display: inline-block;
+	margin: 0 15px 15px 15px;
+	padding: 10px 0;
+	background:rgba(0,0,0,.5);
+	color: white;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.animateCon ul li:hover
+{
+	background:rgba(0,0,0,.8);
+}
+
+.animateCon p
+{
+	font-size: 1.3em;
+	width: 90%;
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+	color: white;
+	line-height: 30px;
+	clear: both;
+}
+
+.animateCon ul li:nth-child(3),.animateCon ul li:last-child
+{
+	margin-bottom: 0!important;
+}
+
+.container
+{
+	margin: 0!important;
+	padding: 0!important;
+	width: 100%!important;
+}
+
+.container > .view.ng-animate {
+	position:absolute;
+  left:0;
+	top:250px;
+  z-index: 1;
+  width:100%;
+  background:#111;
+	min-height: 100vh;
+}
+.view.ng-enter, .view.ng-leave,
+.gameLinks.ng-anchor {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+}
+.view.ng-enter {
+  -webkit-opacity:1;
+  -moz-opacity:1;
+  -o-opacity:1;
+  opacity:1;
+  -webkit-transform:translateX(100%);
+  -moz-transform:translateX(100%);
+  -o-transform:translateX(100%);
+  transform:translateX(100%);
+}
+.view.ng-enter.ng-enter-active, .view.ng-leave {
+  -webkit-transform:translateX(0%);
+  -moz-transform:translateX(0%);
+  -o-transform:translateX(0%);
+  transform:translateX(0%);
+}
+.view.ng-leave.ng-leave-active {
+  -webkit-opacity:0;
+  -moz-opacity:0;
+  -o-opacity:0;
+  opacity:0;
+  -webkit-transform:translateY(100%);
+  -moz-transform:translateY(100%);
+  -o-transform:translateY(100%);
+  transform:translateY(100%);
+}
+
+/*********************game play************************/
+#gameOpening h5
+{ 
+	line-height: 30px!important;
+}
+
+.GAME
+{
+	display: block;
+	clear: both;
+	margin: 0!important;
+	padding: 20px 0 0 0!important;
+	width: 95%;
+}
+
+.gameButtons.level .level,
+.gameButtons.warrior .warrior,
+.gameButtons.controls .controls,
+.gameButtons.items .items,
+.gameButtons.enemies .enemies
+{
+	background-color: red;
+}
+
+.gameButtons.concepts .concepts,
+.gameButtons.prologue .prologue,
+.gameButtons.mainStory .mainStory
+{
+	background-color: red;
+}
+
+.gameButtons
+{
+	width: 95%;
+	margin:0 auto 10px auto!important;
+	clear: both;
+	display: block;
+	padding: 1%!important;
+}
+
+.gameButtons button
+{
+	cursor: pointer;
+	color: white;
+	display: inline-block;
+	width: 18%;
+	margin: 0 .5%;
+	padding:10px 0;
+	border: none;
+	background: rgba(255,255,255,.5);
+	font-size: 1.5em;
+}
+
+.storyButtons button
+{
+	width: 30%;
+}
+
+
+/*********************************Game play page************************/
+#levelCon
+{
+	text-align: center;
+}
+
+#levelCon h5
+{
+	padding: 0;
+	font-size: 1.5em;
+	width: 80%;
+	display: block;
+	margin: auto;
+	line-height: 30px!important;
+}
+
+#levelCon article
+{
+	display: inline-block;
+	margin: 20px;
+	width: 340px;
+	background-color: rgba(55,55,55,.5);
+	border: 3px solid #333;
+	position: relative;
+	overflow: hidden;
+}
+
+.level-content
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: rgba(51,51,51,.5);
+	padding: 21% 0;
+	font-size: 2.8em;
+	opacity: 0;
+	-o-opacity:0;
+	-moz-opacity:0
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#levelCon article:hover > span.level-content
+{
+	opacity: 1;
+}
+
+.warriorCon
+{
+	text-align: center;
+}
+
+.warriorTitle
+{
+	position: absolute;
+	top: 0;
+	left: 0%;
+	width:100%;
+	margin: 0;
+	padding: 10px 0;
+	font-weight: bold;
+	font-size: 2em;
+	background: rgba(51,51,51,.5);
+	opacity: 0;
+	-o-opacity:0;
+	-moz-opacity:0
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#warriorSection
+{
+	display: inline-block;
+	padding: 0;
+	background: none;
+	border: none;
+	margin: 0 10px 20px 10px;
+	position: relative;
+}
+
+#warriorSection:hover > .statsList 
+{
+	opacity: 1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+#warriorSection:hover > .warriorTitle
+{
+	opacity: 1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+.statsList
+{
+	position: absolute;
+	bottom: 0;
+	left: 0%;
+	width: 100%;
+	text-align: center;
+	overflow: hidden;
+	background: rgba(51,51,51,.5);
+	overflow: hidden;
+	padding: 10px 0;
+	border: none;
+	opacity: 0;
+	-o-opacity:0;
+	-moz-opacity:0
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+.statsList object
+{
+	display: block;
+	margin: auto;
+	margin-bottom: 10px;
+}
+
+.statsList article
+{
+	width: 33.3333333333%;
+	float: left;
+}
+
+.stats
+{
+  display: block;
+	font-size: 1.5em;
+}
+
+#itemCon
+{
+	text-align: center;
+}
+
+#itemCon h3
+{
+	margin: 0 0 5px 0;
+}
+
+#itemCon div
+{
+	display: inline-block;
+	border: none;
+	margin: 0 20px 20px 20px;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+}
+
+.item-content
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(51,51,51,.5);
+	font-size: 1.8em;
+	padding: 43% 0;
+	opacity: 0;
+	-o-opacity:0;
+	-moz-opacity:0
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#itemCon div:hover > .item-content
+{
+	opacity: 1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+#enemyCon
+{
+	text-align: center;
+}
+
+#enemyCon div
+{
+	display: inline-block;
+	width: 300px;
+	padding: 0%;
+	margin: 0 5px 20px 5px;
+	border: none;
+	position: relative;
+	overflow: hidden;
+}
+
+.enemy-Title
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: rgba(51,51,51,.5);
+	font-size: 1.8em;
+	padding:5% 0;
+	opacity: 0;
+	-o-opacity:0;
+	-moz-opacity:0
+  -webkit-opacity:0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+
+#enemyCon div:hover > .enemy-Title
+{
+	opacity: 1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+#enemyCon div:hover > .statsList
+{
+		opacity: 1;
+	-moz-opacity:1;
+	-webkit-opacity:1;
+}
+
+
+/**************************QUERIES*****************************/
+
+/*My Phone*/
+@media only screen and (max-width: 240px) {
+	#taskButton
+	{
+		width: 90%;
+		left: 5%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 70px;
+	}
+	
+	.tasks
+	{
+		border-radius: 0;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: .9em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 90px!important;
+	}
+	
+	header
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav ul li
+	{
+		margin: 0 5px;
+	}
+	
+	#mainNav a
+	{
+		font-size: .8em;
+	}
+	
+	#mainNav.home .home,
+  #mainNav.story .story,
+  #mainNav.team .team,
+  #mainNav.gameplay .gameplay
+{
+	font-size: 1em;
+}
+	
+	#hex
+	{
+	 top: -314px;
+		height: 40px;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 1em;
+		margin: 5px 0;
+	}
+
+	.opening h1
+	{
+		border: none!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1em!important;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0;
+		width: 100%;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: .8em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#teamCon
+	{
+		background-image: none;
+	}
+	
+	.teamMates
+	{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 0 20px 0;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1em;
+	}
+	
+	.teamMates img
+	{
+		width: 90%;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: .8em;
+	}
+	
+	.GAME
+	{
+		padding: 0!important;
+		width: 100%;
+	}
+	
+	.level-content
+	{
+		padding: 16% 0;
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#levelCon article
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0!important; 
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0!important; 
+	}
+	
+	#itemCon div
+	{
+		margin: 0;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	
+}
+
+/*Android*/
+@media only screen and (min-width:241px) and  (max-width: 266px) {
+	
+	#taskButton
+	{
+		width: 90%;
+		left: 5%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 70px;
+	}
+	
+	.tasks
+	{
+		border-radius: 0;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: .9em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 90px!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1em!important;
+	}
+	
+	header
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav ul li
+	{
+		margin: 0 5px;
+	}
+	
+	#mainNav a
+	{
+		font-size: .8em;
+	}
+	
+	#mainNav.home .home,
+  #mainNav.story .story,
+  #mainNav.team .team,
+  #mainNav.gameplay .gameplay
+{
+	font-size: 1em;
+}
+	
+	#hex
+	{
+	 top: -314px;
+		height: 40px;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 1em;
+		margin: 5px 0;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0;
+		width: 100%;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1em;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: .8em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#teamCon
+	{
+		background-image: none;
+	}
+	
+	.teamMates
+	{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 0 20px 0;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1em;
+	}
+	
+	.teamMates img
+	{
+		width: 90%;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: .8em;
+	}
+	
+	.GAME
+	{
+		padding: 0!important;
+		width: 100%;
+	}
+	
+	.level-content
+	{
+		padding: 16% 0;
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#levelCon article
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0!important; 
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0!important; 
+	}
+	
+	#itemCon div
+	{
+		margin: 0;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/*iPhone4*/
+@media only screen and (min-width: 267px) and (max-width: 320px) {
+	
+	#taskButton
+	{
+		width: 90%;
+		left: 5%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 70px;
+	}
+	
+	.tasks
+	{
+		border-radius: 0;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: .9em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 90px!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1em!important;
+	}
+	
+	header
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav ul li
+	{
+		margin: 0 15px;
+	}
+	
+	#mainNav a
+	{
+		font-size: .8em;
+	}
+	
+	#mainNav.home .home,
+  #mainNav.story .story,
+  #mainNav.team .team,
+  #mainNav.gameplay .gameplay
+{
+	font-size: 1em;
+}
+	
+	#hex
+	{
+	 top: -314px;
+		height: 40px;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 1.2em;
+		margin: 5px 0;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0;
+		width: 100%;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1.2em;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: 1em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#teamCon
+	{
+		background-image: none;
+	}
+	
+	.teamMates
+	{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 0 20px 0;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	.GAME
+	{
+		padding: 0!important;
+		width: 100%;
+	}
+	
+	.level-content
+	{
+		padding: 16% 0;
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#levelCon article
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0!important; 
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0!important; 
+	}
+	
+	#itemCon div
+	{
+		margin: 0;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/*Blackberry*/
+@media only screen and (min-width: 321px) and (max-width: 360px) {
+	
+	#taskButton
+	{
+		width: 90%;
+		left: 5%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 70px;
+	}
+	
+	.tasks
+	{
+		border-radius: 0;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: .9em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 90px!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1em!important;
+	}
+	
+	header
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav ul li
+	{
+		margin: 0 15px;
+	}
+	
+	#mainNav a
+	{
+		font-size: .8em;
+	}
+	
+	#mainNav.home .home,
+  #mainNav.story .story,
+  #mainNav.team .team,
+  #mainNav.gameplay .gameplay
+{
+	font-size: 1em;
+}
+	
+	#hex
+	{
+	 top: -310px;
+		height: 70px;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 1.2em;
+		margin: 5px 0;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1.2em;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: 1em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#teamCon
+	{
+		background-image: none;
+	}
+	
+	.teamMates
+	{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 0 20px 0;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1.2em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	.GAME
+	{
+		padding: 0!important;
+		width: 100%;
+	}
+	
+	.level-content
+	{
+		padding: 16% 0;
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#levelCon article
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#itemCon div
+	{
+		margin: 0;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/*Galaxy S*/
+@media only screen and (min-width: 415px) and (max-width: 480px) {
+	
+	#taskButton
+	{
+		width: 90%;
+		left: 5%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 80px;
+	}
+	
+	.tasks
+	{
+		border-radius: 0;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 90px!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1em!important;
+	}
+	
+	header
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav ul li
+	{
+		margin: 0 15px;
+	}
+	
+	#mainNav a
+	{
+		font-size: .8em;
+	}
+	
+	#mainNav.home .home,
+  #mainNav.story .story,
+  #mainNav.team .team,
+  #mainNav.gameplay .gameplay
+{
+	font-size: 1em;
+}
+	
+	#hex
+	{
+	 top: -300px;
+		height: 70px;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 1.2em;
+		margin: 5px 0;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0 5px;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1.2em;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: 1em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#teamCon
+	{
+		background-size: 120px;
+	}
+	
+	.teamMates
+	{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 0 20px 0;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1.2em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	.GAME
+	{
+		padding: 0!important;
+		width: 100%;
+	}
+	
+	.level-content
+	{
+		padding: 25% 0;
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#levelCon article
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#itemCon div
+	{
+		margin: 0 10px;
+		width: 20%;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		padding: 40% 0;
+		font-size: 1em;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/*Kindle*/
+@media only screen and (min-width: 481px) and (max-width: 533px) {
+	
+	#taskButton
+	{
+		width: 70%;
+		left: 15%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 80px;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 100px!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1.1em!important;
+	}
+	
+	header
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav ul li
+	{
+		margin: 0 25px;
+	}
+	
+	#mainNav.home .home,
+  #mainNav.story .story,
+  #mainNav.team .team,
+  #mainNav.gameplay .gameplay
+{
+	font-size: 1.2em;
+}
+	
+	#hex
+	{
+	 top: -300px;
+		height: 70px;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 10px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 2em;
+		margin: 5px 0;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0 15px;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1.2em;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: 1.2em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1.1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#teamCon
+	{
+		background-size: 140px;
+	}
+	
+	.teamMates
+	{
+		width: 70%;
+		float: none;
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1.2em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1.2em;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.thisList
+	{
+		width: 100%!important;
+		left: 0%!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0%!important;
+	}
+	
+	#itemCon div
+	{
+		margin: 0 10px;
+		width: 20%;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		padding: 40% 0;
+		font-size: 1em;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/*Nook Tablet*/
+@media only screen and (min-width: 534px) and (max-width: 600px) {
+	
+	#taskButton
+	{
+		width: 70%;
+		left: 15%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 80px;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 100px!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1.1em!important;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 2em;
+		margin: 5px 0;
+	}
+	
+	.containers
+	{
+		background-repeat: repeat-y;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0 15px;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 30%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1.2em;
+	}
+	
+	.gameButtons button:nth-child(4)
+	{
+		margin-bottom: 0;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: 1.2em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1.1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+#teamCon
+	{
+		background-size: 160px;
+	}
+	
+	.teamMates
+	{
+		width: 70%;
+		float: none;
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1.2em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1.2em;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		width: 100%!important;
+		left: 0%!important;
+	}
+	
+	#itemCon div
+	{
+		margin: 0 10px;
+		width: 20%;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+		padding: 40% 0;
+		font-size: 1em;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+/*Apple Ipad*/
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+	
+	#taskButton
+	{
+		width: 50%;
+		left: 25%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 80px;
+	}
+	
+	footer
+	{
+		text-align: center;
+	}
+	
+	.gameButtons button
+	{
+		width: 17%;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 2em;
+		margin: 5px 0;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#phantom
+	{
+		position: static;
+		position: unset;
+		max-width: 100%;
+	}
+	
+	.teamMates
+	{
+		width: 70%;
+		float: none;
+		display: block;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1.2em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1.2em;
+	}
+	
+	#levelCon article
+	{
+		margin: 0 5px;
+		width: 30%;
+	}
+	
+	.level-content
+	{
+		padding: 15% 0;
+	}
+	
+
+	#itemCon div
+	{
+		margin: 10px;
+		width: 20%;
+	}
+	
+	.warriorTitle
+	{
+		margin: 0!important;
+		left: 0!important;
+		width: 100%!important;
+	}
+	
+	.statsList
+	{
+		margin: 0!important;
+		left: 0!important;
+		width: 100%!important;
+	}
+}
+
+/*Desktop1*/
+@media only screen and (min-width: 801px) and (max-width: 980px) {
+	
+	#taskButton
+	{
+		width: 50%;
+		left: 25%
+	}
+	
+	#teamCon
+	{
+		background-size: 80px;
+	}
+	
+	.whatTextBox p
+	{
+		width: 50%;
+		margin: 0;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.whatTextBox img
+	{
+		width: 50%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 50%;
+		margin: 0;
+		float: left;
+		font-size: 1em;
+	}
+	
+	#storyCon img
+	{
+		width: 50%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 50%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 50%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 50%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 60px;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 15%;
+		margin: 0 10px!important;
+		margin-bottom: 10px;
+		font-size: 1.2em;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate p
+	{
+		font-size: 1.1em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1.2em;
+	}
+	
+	#levelCon article
+	{
+		margin: 10px 5px;
+		width: 30%;
+	}
+	
+	.level-content
+	{
+		padding: 15% 0;
+	}
+	
+	.warriorCon section
+	{
+		width: 30%;
+		margin: 15px 10px;
+	}
+
+	#itemCon div
+	{
+		margin: 10px;
+		width: 20%;
+	}
+	
+	.warriorTitle
+	{
+		margin: 0!important;
+		left: 0!important;
+		width: 100%!important;
+	}
+	
+	.statsList
+	{
+		margin: 0!important;
+		left: 0!important;
+		width: 100%!important;
+	}
+	
+	#enemyCon div
+	{
+		width: 23%;
+	}
+}
+
+/*Desktop2*/
+@media only screen and (min-width: 981px) and (max-width: 1280px) {
+	#phantom
+	{
+		width: 190px;
+	}
+	
+	#enemyCon div
+	{
+		width: 22%;
+		margin: 10px;
+	}
+	
+}
+
+/*Desktop 3*/
+@media only screen and (min-width: 1367px) {
+}
+
+

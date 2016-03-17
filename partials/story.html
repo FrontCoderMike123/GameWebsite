@@ -1,0 +1,39 @@
+<section class="opening">
+	<h1>Game Story</h1>
+
+	<!--<select class="no-scroll" size="3" ng-model="selection" ng-options="gameNav for gameNav in gameNavs">
+	</select>-->
+
+	<div class="gameButtons storyButtons">
+		<button class="concepts" ng-click="toshow = 1">Concepts</button>
+		<button class="prologue" ng-click="toshow = 2">Prologue</button>
+		<button class="mainStory" ng-click="toshow = 3">Main Story</button>
+	</div>
+
+</section>
+
+<section id="gameStoryCon">
+	<div class="animateCon">
+		<div class="animate" ng-show="toshow == 1">
+			<h3>Concepts</h3>
+			<ul>
+				<li>Castle Level</li>
+				<li>Knights &amp; Guards are the Heroes</li>
+				<li>Skeletons have taken over the Castle</li>
+				<li>3D Side Scrolling Game</li>
+			</ul>
+			<p>The Game takes place in a Fantasy World inside of a Castle / Dungeon setting.</p>
+		</div>
+
+		<div class="animate" ng-show="toshow == 2">
+			<h3>Prologue</h3>
+			<p>Sandria, a magical world filled with magic, demons, monster, human. Sandria has long known for wars between demons, humans and Magic Warriors. Those Magic Warrior are the defender of
+Sandria. Protecting the humans from harm. Mankind was blessed by its protectors, the warrior from the High Summoners of Mechluca. The land of Mechluca was known for it magic, evil dark arts, and skilled warriors &amp; wizards. The moment of their strongest warrior; Lord Hope has defect from High Summoners of Mechluca. Lord Hope started creating evil dark magic and destroying lands &amp; castle with his minions. High Summoners of Mechluca and their warriors took charge and gather an army to defeat Lord Hope from his evil plans from destroying the world. The War took over 10 years to defeat Lord Hope. Now High Lord Hope of Mechluca haved seal every magic scroll from Lord Hope. And they gave every magic scroll to each castle and hide in the lowest of the dungeons inside their castle. The War hasn’t been finished yet.</p>
+		</div>
+
+		<div class="animate" ng-show="toshow == 3">
+			<h3>Main Story</h3>
+			<p>Sandria, a world is that filled with magic, demons, monster, human. When an Ancient Magic Scroll inside the Castle of Zanark, has awaken from it seal. Opening a portal back the underworld. Skeletons has invaded the Castle of Zanark from the inside. Land of Zanark is threatened from within. Three Magical Warrior has been chosen by destiny to save the Land of Zanark and seal the Magic Scroll of the Underworld. The Battle has begun.</p>
+		</div>
+	</div>
+</section>

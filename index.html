@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Castle Raiders</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<script src="js/TweenMax.min.js"></script>
+<script src="js/logo.js"></script>
+</head>
+
+<body data-ng-app="raiderSite">
+	<div id="mainContainer">
+
+	<div id="padding">
+
+	<div id="openingContainer">
+	<header id="header">
+		<h2 class="hidden">Castle Raiders Header</h2>
+
+		<img id="banner" src="images/layouts/banner.png" alt="Banner">
+
+		<div id="hex"></div>
+
+		<nav id="mainNav" class="{{active}}">
+			<h2 class="hidden">Castle Raiders Navigation</h2>
+			<!--ng-controller="navCTRL" this goes in UL-->
+			<!--
+			This here... works GREEEAAAATTTTT to loop through and what not... but as soooon as i want to use 
+			its scope to add a class... it would not go active for me.... its apples... but i get oranges lol.... so thats why the other part is there
+			<ul>
+				<li data-ng-repeat="nav in navs">
+					<a href="#/{{nav.path}}" data-ng-class="{{nav.path}}" data-ng-click="active='{{nav.path}}'">{{nav.title}}</a>
+				</li>
+			</ul>-->
+			<ul>
+				<li>
+					<a href="#/home" class="home gameLinks" ng-click="active='home'">HOME</a> 
+				</li>
+				<li>
+					<a href="#/story" class="story gameLinks" ng-click="active='story'">STORY</a>
+				</li>
+				<li>
+					<a href="#/team" class="team gameLinks" ng-click="active='team'">TEAM</a>
+				</li>
+				<li>
+					<a href="#/gameplay" class="gameplay gameLinks" ng-click="active='gameplay'">GAMEPLAY</a> 
+				</li>
+			</ul>
+		</nav>
+
+	</header>
+	</div>
+
+	<!--data-ng-click="select(nav)" data-ng-class="{active: isActive(nav)}"-->
+
+		<div class="container">
+			<div ui-view=""></div>   
+		</div><!--container-->
+
+	</div><!--padding!!!-->
+
+	<footer>
+		<img src="images/logo/phantomSm.jpg" alt="Phantom Games Logo"/>
+		<img src="images/logo/logoSm.jpg" alt="Castle Raiders Logo"/>
+		<p>Phantom Games &amp; Castle Raiders.<span class="break"></span>&copy; Copyright 2016. All Rights Reserved</p>
+	</footer>
+
+</div><!--main Container-->
+
+<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/boostrap.min.js"></script>-->
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.js"></script>
+<script src="js/angular-animate.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/scroll.js"></script>
+<script>
+    smoothScroll.init();
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+	<section class="opening teamOpening">
+		<h1>Meet the Team!</h1>
+		<h5 id="teamH">The Creators of Castle Raiders</h5>
+		<button id="taskButton">View Tasks</button>
+	</section><!--opening-->
+
+	<section class="containers" id="teamCon">
+		<h2 class="hidden">The Team</h2>
+
+			<div class="teamMates" ng-repeat="team in teams">
+				<img src="{{team.Photo}}" alt="{{team.Name}}"/>
+				<div class="listHolder none">
+				<div class="tasks">
+				<p class="teamNames">{{team.Name}}</p>
+				</div>
+				<ul>
+<li ng-repeat="task in team.Tasks" class="item items">{{task}}</li>
+				</ul>
+				</div>
+			</div>
+
+	</section>

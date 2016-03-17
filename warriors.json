@@ -1,0 +1,54 @@
+{
+	"Warriors":
+	[{
+		"Title":"Knight",
+		"Photo":"images/characters/heroes/knightSquare.jpg",
+		"SVG":[
+			"images/characters/heroes/weapon.svg",
+			"images/characters/heroes/strength.svg",
+			"images/characters/heroes/speed.svg"
+			],
+		"PNG":[
+			"images/characters/heroes/weapon.png",
+			"images/characters/heroes/strength.png",
+			"images/characters/heroes/speed.png"
+		],
+		"Weapon":"Sword",
+		"Strength":"4 / 5",
+		"Speed":"4 / 5"
+	},
+	{
+		"Title":"Guard",
+		"Photo":"images/characters/heroes/guardSquare.jpg",
+		"SVG":[
+			"images/characters/heroes/weapon.svg",
+			"images/characters/heroes/strength.svg",
+			"images/characters/heroes/speed.svg"
+			],
+		"PNG":[
+			"images/characters/heroes/weapon.png",
+			"images/characters/heroes/strength.png",
+			"images/characters/heroes/speed.png"
+		],
+		"Weapon":"Axe",
+		"Strength":"5 / 5",
+		"Speed":"3 / 5"
+	},
+	{
+		"Title":"Wizard",
+		"Photo":"images/characters/heroes/wizardSquare.jpg",
+		"SVG":[
+			"images/characters/heroes/weapon.svg",
+			"images/characters/heroes/strength.svg",
+			"images/characters/heroes/speed.svg"
+			],
+		"PNG":[
+			"images/characters/heroes/weapon.png",
+			"images/characters/heroes/strength.png",
+			"images/characters/heroes/speed.png"
+		],
+		"Weapon":"Staff",
+		"Strength":"3 / 5",
+		"Speed":"5 / 5"
+	}]
+}
