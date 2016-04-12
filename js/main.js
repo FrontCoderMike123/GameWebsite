@@ -1,43 +1,47 @@
 (function() {
-var site = angular.module('raiderSite', ['ui.router','ngAnimate']);
+var site = angular.module('raiderSite', ['ui.router']);
 
-site.config(['$stateProvider','$urlRouterProvider','$locationProvider', function($stateProvider,$urlRouterProvider,$locationProvider) {
+site.config(['$stateProvider','$urlRouterProvider', function($stateProvider,$urlRouterProvider) {
 	$stateProvider.state('home',{
 		url: '/',
 		templateUrl: 'partials/home.html',
-		controller: 'homeController'
+		controller: 'homeController',
+		activeNav: 'home'
 	})
 	$stateProvider.state('story',{
 		url: '/story',
 		templateUrl: 'partials/story.html',
-		controller: 'storyController'
+		controller: 'storyController',
+		activeNav: 'story'
 	})
 	$stateProvider.state('team',{
 		url: '/team',
 		templateUrl: 'partials/team.html',
-		controller: 'teamController'
+		controller: 'teamController',
+		activeNav: 'team'
 	})
 	$stateProvider.state('gameplay',{
 		url: '/gameplay',
-		templateUrl: 'partials/gameplay.html'
+		templateUrl: 'partials/gameplay.html',
+		activeNav: 'gameplay'
 	})
 	$urlRouterProvider.otherwise('/');
 }]);
 
-site.controller('navCTRL', ['$rootScope','$scope','$location', function($rootScope,$scope,$location) {
-	$rootScope.navs = [
-		{ path: 'home', title: 'HOME' },
-		{ path: 'story', title: 'STORY' },
-		{ path: 'team', title: 'TEAM' },
-		{ path: 'gameplay', title: 'GAMEPLAY' }
+site.controller('indexCTRL', ['$scope','$state', function($scope,$state) {
+	$scope.$state = $state;
+	$scope.navs = [
+		{ 'path': 'home', 'title': 'HOME', 'type':'home' },
+		{ 'path': 'story', 'title': 'STORY', 'type':'story' },
+		{ 'path': 'team', 'title': 'TEAM', 'type':'team' },
+		{ 'path': 'gameplay', 'title': 'GAMEPLAY', 'type':'gameplay' }
 	];
 }]);
 
 site.controller('homeController', ['$scope', '$http', function($scope, $http) {
 	$scope.homeNavs = [
-		{ path: 'what', title: 'What Is It?' },
-		{ path: 'storyCon', title: 'Story' },
-		{ path: 'multiCon', title: 'Multiplayer' }
+		{ 'path': 'what', 'title': 'What Is It?' },
+		{ 'path': 'storyCon', 'title': 'Epic Story' }
 	];
 }]);
 
@@ -95,7 +99,28 @@ site.controller('enemies',['$scope','$http',function($scope,$http){
 	$http.get('enemies.json').success(function(stats){
 		$scope.enemies = stats.Enemies;
 	});
+}]);
 
+site.controller('gameStaggers',['$scope','$http',function($scope,$http){
+	$scope.stagLevels = function(){
+		TweenMax.staggerFrom(".levels",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
+	};
+
+	$scope.stagPeople = function(){
+		TweenMax.staggerFrom(".people",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
+	};
+
+	$scope.stagBadPeople = function(){
+		TweenMax.staggerFrom(".badPeople",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
+	};
+
+	$scope.stagControls = function(){
+		TweenMax.staggerFrom(".controlImg",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
+	};
+
+	$scope.stagItems = function(){
+		TweenMax.staggerFrom(".itemImgs",2,{scale:0.5,opacity:0,delay:0.5,ease:Elastic.easeOut}, 0.1);
+	};
 }]);
 
 })();

@@ -84,10 +84,20 @@ object
 
 .scrolls
 {
+	clear: both;
+	text-align: center;
+	width: 15%;
 	display: block;
 	margin: auto;
-	width: 30px;
-	text-align: center;
+}
+
+.scrolls object, .scrolls img
+{
+	max-width: 100%;
+	background: rgba(170,17,17,.6);
+	padding: 10%;
+	border-radius: 50%;
+	box-shadow: 0 0 2px rgba(255,255,255,.7);
 }
 
 .nextIcon
@@ -178,21 +188,26 @@ footer h3
 	left: 0;
 	width: 100%;
 	background: rgba(51,51,51,.7);
-	padding: 10px 0;
+	padding: 0;
 }
 
 #mainNav li
 {
 	display: inline-block;
-	margin: 0 40px;
+	margin: 0 30px;
+	width: 10%;
 }
 
 #mainNav a
 {
-	color: white;
+	color: #fff;
+	display: block;
+	width: 100%;
 	font-weight: bold;
-	padding-bottom: 2px;
-	border-bottom: 2px solid rgba(0,0,0,0);
+	padding: 6px 0;
+	border-top: 4px solid rgba(255,255,255,0);
+	border-bottom: 4px solid rgba(255,255,255,0);
+	
 	-webkit-transition: all .5s ease;
 	-moz-transition: all .5s ease;
 	-o-transition: all .5s ease;
@@ -201,23 +216,14 @@ footer h3
 
 #mainNav a:hover
 {
-	text-decoration: none;
-	border-color: #aa1111;
+	background: rgba(170,17,17,.8);
 }
 
-#mainNav.home .home,
-#mainNav.story .story,
-#mainNav.team .team,
-#mainNav.gameplay .gameplay
+#mainNav .active
 {
-	border-bottom: 3px solid #aa1111;
-	font-size: 1.5em;
-}
-
-.active
-{
-	border-bottom: 5px solid #aa1111;
-	font-size: 1.3em;
+	background: rgba(170,17,17,.8);
+	border-color: rgba(51,51,51,1);
+	letter-spacing: 1px;
 }
 
 .opening
@@ -744,49 +750,6 @@ footer h3
 	width: 100%!important;
 }
 
-.container > .view.ng-animate {
-	position:absolute;
-  left:0;
-	top:250px;
-  z-index: 1;
-  width:100%;
-  background:#111;
-	min-height: 100vh;
-}
-.view.ng-enter, .view.ng-leave,
-.gameLinks.ng-anchor {
-  -webkit-transition:0.5s linear all;
-  -moz-transition:0.5s linear all;
-  -o-transition:0.5s linear all;
-  transition:0.5s linear all;
-}
-.view.ng-enter {
-  -webkit-opacity:1;
-  -moz-opacity:1;
-  -o-opacity:1;
-  opacity:1;
-  -webkit-transform:translateX(100%);
-  -moz-transform:translateX(100%);
-  -o-transform:translateX(100%);
-  transform:translateX(100%);
-}
-.view.ng-enter.ng-enter-active, .view.ng-leave {
-  -webkit-transform:translateX(0%);
-  -moz-transform:translateX(0%);
-  -o-transform:translateX(0%);
-  transform:translateX(0%);
-}
-.view.ng-leave.ng-leave-active {
-  -webkit-opacity:0;
-  -moz-opacity:0;
-  -o-opacity:0;
-  opacity:0;
-  -webkit-transform:translateY(100%);
-  -moz-transform:translateY(100%);
-  -o-transform:translateY(100%);
-  transform:translateY(100%);
-}
-
 /*********************game play************************/
 #gameOpening h5
 { 
@@ -1129,21 +1092,14 @@ footer h3
 	
 	#mainNav ul li
 	{
-		margin: 0 5px;
+		margin: 0;
+		width: 50%;
 	}
 	
 	#mainNav a
 	{
 		font-size: .8em;
 	}
-	
-	#mainNav.home .home,
-  #mainNav.story .story,
-  #mainNav.team .team,
-  #mainNav.gameplay .gameplay
-{
-	font-size: 1em;
-}
 	
 	#hex
 	{
@@ -1448,7 +1404,8 @@ footer h3
 	
 	#mainNav ul li
 	{
-		margin: 0 5px;
+		margin: 0;
+		width: 50%;
 	}
 	
 	#mainNav a
@@ -1750,7 +1707,8 @@ footer h3
 	
 	#mainNav ul li
 	{
-		margin: 0 15px;
+		margin: 0;
+		width: 50%;
 	}
 	
 	#mainNav a
@@ -2047,7 +2005,8 @@ footer h3
 	
 	#mainNav ul li
 	{
-		margin: 0 15px;
+		margin: 0;
+		width: 25%;
 	}
 	
 	#mainNav a
@@ -2285,8 +2244,304 @@ footer h3
 	}
 }
 
+/*Device*/
+@media only screen and (min-width:361px) and (max-width:416px){
+
+	#taskButton
+	{
+		width: 90%;
+		left: 5%
+	}
+	
+	#teamH
+	{
+		margin-bottom: 70px;
+	}
+	
+	.tasks
+	{
+		border-radius: 0;
+	}
+	
+	footer
+	{
+		text-align: center;
+		font-size: .9em;
+	}
+	
+	#padding
+	{
+		padding-bottom: 90px!important;
+	}
+	
+	.containers
+	{
+		background-image: none;
+	}
+	
+	.containers p
+	{
+		font-size: 1em!important;
+	}
+	
+	header
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav
+	{
+		position: static;
+		position: unset;
+	}
+	
+	#mainNav ul li
+	{
+		margin: 0;
+		width: 25%;
+	}
+	
+	#mainNav a
+	{
+		font-size: .8em;
+	}
+	
+	#mainNav.home .home,
+  #mainNav.story .story,
+  #mainNav.team .team,
+  #mainNav.gameplay .gameplay
+{
+	font-size: 1em;
+}
+	
+	#hex
+	{
+	 top: -310px;
+		height: 70px;
+	}
+	
+	#gameStoryCon
+	{
+		padding: 5px 0;
+	}
+	
+	.opening h1,#gameStoryCon h1,.containers h1
+	{
+		font-size: 1.2em;
+		margin: 5px 0;
+	}
+	
+	.opening
+	{
+		border-bottom: none;
+	}
+	
+	.opening ul li
+	{
+		margin: 0;
+	}
+	
+	.opening ul li a
+	{
+		font-size: 1em;
+	}
+	
+	.whatTextBox p
+	{
+		width: 100%;
+		margin: 0;
+		text-align: center;
+	}
+	
+	.whatTextBox img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#storyCon img
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon p
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	#multiCon img
+	{
+		width: 100%;
+		margin: 0 0 10px 0;
+	}
+	
+	#learnMore
+	{
+		width: 90%;
+	}
+	
+	#padding
+	{
+		padding-bottom: 70px;
+	}
+	
+	footer p
+	{
+		float: none;
+		text-align: center;
+		font-size: 1em;
+	}
+	
+	.break
+	{
+		display: block;
+	}
+	
+	/********Story Page*******/
+	.gameButtons
+	{
+		width: 100%;
+	}
+	
+	.gameButtons button
+	{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 10px;
+		font-size: 1.2em;
+	}
+	
+	.gameButtons button:last-child
+	{
+		margin-bottom: 0;
+	}
+	
+	.animateCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.animateCon h3
+	{
+		font-size: 1.8em;
+	}
+	
+	.animate ul li
+	{
+		margin: 0;
+		font-size: 1em;
+		width: 100%;
+	}
+	
+	.animate p
+	{
+		font-size: 1em;
+	}
+	
+	/****************TEAM******************/
+	.teamOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	#teamCon
+	{
+		background-image: none;
+	}
+	
+	.teamMates
+	{
+		width: 100%;
+		float: none;
+		display: block;
+		margin: 0 0 20px 0;
+	}
+  
+	#teamCon li
+	{
+		font-size: 1.2em;
+	}
+	
+	/*************GAME PLAY***************/
+	#gameOpening h5
+	{
+		font-size: 1em;
+	}
+	
+	.GAME
+	{
+		padding: 0!important;
+		width: 100%;
+	}
+	
+	.level-content
+	{
+		padding: 16% 0;
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#levelCon article
+	{
+		width: 100%;
+		margin: 0;
+	}
+	
+	.warriorCon section
+	{
+		width: 100%;
+		margin: 0!important;
+	}
+	
+	.statsList
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	.warriorTitle,.enemy-Title
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#itemCon div
+	{
+		margin: 0;
+	}
+	
+	.item-content
+	{
+		opacity: 1;
+		-moz-opacity:1;
+		-webkit-opacity:1;
+	}
+	
+	#enemyCon div
+	{
+		width: 100%;
+		margin: 0;
+	}
+}
+
+
+
 /*Galaxy S*/
-@media only screen and (min-width: 415px) and (max-width: 480px) {
+@media only screen and (min-width: 417px) and (max-width: 480px) {
+
 	
 	#taskButton
 	{
@@ -2339,7 +2594,8 @@ footer h3
 	
 	#mainNav ul li
 	{
-		margin: 0 15px;
+		margin: 0;
+		width: 25%;
 	}
 	
 	#mainNav a
@@ -2629,16 +2885,9 @@ footer h3
 	
 	#mainNav ul li
 	{
-		margin: 0 25px;
+		margin: 0;
+		width: 25%;
 	}
-	
-	#mainNav.home .home,
-  #mainNav.story .story,
-  #mainNav.team .team,
-  #mainNav.gameplay .gameplay
-{
-	font-size: 1.2em;
-}
 	
 	#hex
 	{
@@ -2856,6 +3105,11 @@ footer h3
 
 /*Nook Tablet*/
 @media only screen and (min-width: 534px) and (max-width: 600px) {
+	#mainNav ul li
+	{
+		margin: 0;
+		width: 25%;
+	}
 	
 	#taskButton
 	{
@@ -3103,6 +3357,11 @@ footer h3
 
 /*Apple Ipad*/
 @media only screen and (min-width: 601px) and (max-width: 768px) {
+	#mainNav ul li
+	{
+		margin: 0;
+		width: 20%;
+	}
 	
 	#taskButton
 	{
@@ -3262,7 +3521,12 @@ footer h3
 }
 
 /*Desktop1*/
-@media only screen and (min-width: 801px) and (max-width: 980px) {
+@media only screen and (min-width:769px) and (max-width: 980px) {
+	#mainNav ul li
+	{
+		margin: 0;
+		width: 20%;
+	}
 	
 	#taskButton
 	{

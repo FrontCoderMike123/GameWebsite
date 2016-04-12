@@ -1,13 +1,13 @@
-<section class="opening gameNavCon" id="gameOpening">
+<section class="opening gameNavCon" id="gameOpening" ng-controller="gameStaggers">
 		<h1>Gameplay!</h1>
 		<h5>Castle Raiders is a 3D Side Scrolling Game created in Unity 3D.<br>Players can choose from a set of Heroes to fight the Skeleton Warriors.</h5>
 
 			<div class="gameButtons">
-				<button class="level" ng-click="toshow = 1">Levels</button>
-				<button class="warrior" ng-click="toshow = 2">Warriors</button>
-				<button class="enemies" ng-click="toshow = 3">Enemies</button>
-				<button class="controls" ng-click="toshow = 4">Controls</button>
-				<button class="items" ng-click="toshow = 5">Items</button>
+				<button class="level" ng-click="toshow = 1; stagLevels()">Levels</button>
+				<button class="warrior" ng-click="toshow = 2; stagPeople()">Warriors</button>
+				<button class="enemies" ng-click="toshow = 3; stagBadPeople()">Enemies</button>
+				<button class="controls" ng-click="toshow = 4; stagControls()">Controls</button>
+				<button class="items" ng-click="toshow = 5; stagItems()">Items</button>
 			</div>
 
 			<div class="GAME" ng-show="toshow == 1" id="levelCon" ng-controller="levels">
@@ -15,15 +15,15 @@
 				<h5>In Castle Raiders, you are a mighty hero summoned to save the day and reclaim the fallen Castle. Slash that sword through the Army of Skeletons and RECLAIM YOUR THRONE!</h5>
 					<section data-ng-repeat="level in levels">
 						<h2 class="hidden">Castle Raiders Levels</h2>
-						<article>
+						<article class="levels">
 							<img data-ng-src="{{level.img1}}" alt="Level 1"/>
 							<span class="level-content">{{level.Level1}}</span>
 						</article>
-						<article>
+						<article class="levels">
 							<img data-ng-src="{{level.img2}}" alt="Level 2"/>
 							<span class="level-content">{{level.Level2}}</span>
 						</article>
-						<article>
+						<article class="levels">
 							<img data-ng-src="{{level.img3}}" alt="Level 3"/>
 							<span class="level-content">{{level.Level3}}</span>
 						</article>
@@ -32,7 +32,7 @@
 
 			<div class="GAME warriorCon" ng-show="toshow == 2" ng-controller="warriors">
 				<h1>Playable Characters</h1>
-				<section id="warriorSection" data-ng-repeat="stat in stats">
+				<section id="warriorSection" class="people" data-ng-repeat="stat in stats">
 					<h2 class="hidden">Warriors Container</h2>
 					<img data-ng-src="{{stat.Photo}}" alt="{{stat.Title}}"/>
 					<h3 class="warriorTitle">{{stat.Title}}</h3>
@@ -62,7 +62,7 @@
 
 			<div class="GAME warriorCon" ng-show="toshow == 3" ng-controller="enemies">
 				<h1>Enemies</h1>
-					<section id="warriorSection" data-ng-repeat="enemy in enemies">
+					<section id="warriorSection" class="badPeople" data-ng-repeat="enemy in enemies">
 						<h2 class="hidden">Enemies Container</h2>
 						<img data-ng-src="{{enemy.Photo}}" alt="enemy.Title"/>
 						<h3 class="warriorTitle">{{enemy.Title}}</h3>
@@ -92,12 +92,12 @@
 
 			<div class="GAME" ng-show="toshow == 4" id="controlCon">
 				<h1>Controls</h1>
-					<img src="images/controls.jpg" alt="Game Controls"/>
+					<img class="controlImg" src="images/controls.jpg" alt="Game Controls"/>
 			</div><!--CONTROLS-->
 
 			<div class="GAME" ng-show="toshow == 5" id="itemCon" ng-controller="items">
 				<h1>Items</h1>
-					<div data-ng-repeat="item in items">
+					<div data-ng-repeat="item in items" class="itemImgs">
 						<img data-ng-src="{{item.Img}}" alt="{{item.Title}}"/>
 						<span class="item-content">{{item.Title}}</span>
 					</div>
